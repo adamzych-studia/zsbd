@@ -82,22 +82,22 @@ INSERT INTO JOBS (job_id, job_title, min_salary, max_salary) VALUES (4, 'Nauczyc
 
 INSERT INTO EMPLOYEES (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id
 ) VALUES (1, 'Jan', 'Kowalski', 'jan.kowalski@domena.com', '510-100-200',
-    DATE '2006-01-01', 1, 7000, NULL, 7, 1
+    DATE '2006-01-01', 1, 7000, NULL, 1, NULL
 );
 
 INSERT INTO EMPLOYEES (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id
 ) VALUES (2, 'Sławomir', 'Nowak', 'sławomir.nowak@domena.com', '510-200-300',
-    DATE '2002-05-01', 2, 8000, 10, 6, 2
+    DATE '2002-05-01', 2, 8000, 10, 2, NULL
 );
 
 INSERT INTO EMPLOYEES (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id
 ) VALUES (3, 'Jerzy', 'Duda', 'jerzy.duda@domenae.com', '510-300-400',
-    '2008-09-01', 3, 9500, NULL, 2, 3
+    '2008-09-01', 3, 9500, NULL, 2, NULL
 );
 
 INSERT INTO EMPLOYEES (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id
 ) VALUES (4, 'Marta', 'Wiśniewska', 'marta.wisniewska@domena.com', '510-400-500',
-    DATE '2016-03-01', 4, 6000, 5, 3, 4
+    DATE '2016-03-01', 4, 6000, 5, 3, NULL
 );
 
 UPDATE EMPLOYEES SET manager_id = 1 WHERE employee_id IN (2, 3);
